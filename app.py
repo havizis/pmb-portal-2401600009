@@ -27,8 +27,8 @@ def beranda():
     waktu_utc=datetime.now(timezone.utc).isoformat(),
   )
 
-  @app.route("/health")
-  def health():
+@app.route("/health")
+def health():
     return jsonify(status="ok")
 
 if __name__ == "__main__":
